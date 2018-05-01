@@ -13,6 +13,11 @@ import org.springframework.web.client.RestTemplate;
  * Essa implementação de correlation id serve para exemplificar
  * o funcionamento de filtros do Zuul, correlation ids reais devem
  * ser criados usando a dependência Spring Sleuth.
+ * 
+ * Para utilizar Spring Sleuth com as configurações padrões basta
+ * incluir a dependência ao pom, esse projeto tem essa dependência
+ * para mostrar o funcionamento do correlation id implementado manualmente
+ * e o do Spring Sleuth, que é colocado no log em toda requisição HTTP. 
  *
  */
 @SpringBootApplication
