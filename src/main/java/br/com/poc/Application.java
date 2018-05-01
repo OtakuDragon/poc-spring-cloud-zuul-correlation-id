@@ -8,6 +8,13 @@ import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
+/**
+ * 
+ * Essa implementação de correlation id serve para exemplificar
+ * o funcionamento de filtros do Zuul, correlation ids reais devem
+ * ser criados usando a dependência Spring Sleuth.
+ *
+ */
 @SpringBootApplication
 public class Application {
 
