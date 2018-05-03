@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: poc-spring-cloud-zuul-correlation-id
+  zipkin: #Aponta para um servidor zipkin para enviar informação de tracing, para iniciar um servidor zipkin, basta executar o seguinte comando no docker "docker run -d -p 9411:9411 openzipkin/zipkin"
+    base-url: http://ip172-18-0-21-bblnkkiuguig00am1op0-9411.direct.labs.play-with-docker.com
+  sleuth:
+    sampler: #Configura a porcentagem de requisições enviadas para o zipkin 0 = 0%, 1 = 100%
+      probability: 1
 
 eureka:
   instance:
